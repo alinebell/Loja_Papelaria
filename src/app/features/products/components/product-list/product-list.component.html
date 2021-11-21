@@ -1,4 +1,15 @@
-<h1>Lista de produtos</h1>
-    <div class="container" *ngFor="let item of products">
-        <app-product [product] ="item"></app-product>
+<h1>Lista de produtos</h1><br>
+    <div>
+        <h2>Busca</h2>
+        <input class="input-busca" type= "text" 
+        (keyup)="searchFilter($event)">
+    </div>
+    
+    <div class="container">
+        <app-product 
+        *ngFor="let item of filteredProducts" 
+        [product]="item"></app-product>
+    </div>
+    <div class="mensagem">  
+        <h3 *ngIf="filteredProducts.length === 0">Ops! Nenhum produto foi localizado na sua busca. </h3>
     </div>

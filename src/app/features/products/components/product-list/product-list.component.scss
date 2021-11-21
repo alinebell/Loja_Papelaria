@@ -1,12 +1,31 @@
 h1 {
-    margin-top: 80px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+h2 {
+    font-size: 25px;
+    margin-left: 30px;
 }
 
 .container {
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
     padding: 10px;
-    gap: 20px;
+    gap: 25px;
     margin-bottom: 50px;
     margin-left: 15px;
     
+}
+
+.input-busca {
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.mensagem{
+    margin-left: 45px;
+    justify-content: center;
+    font-size: 30px;
 }

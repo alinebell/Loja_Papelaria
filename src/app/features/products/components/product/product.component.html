@@ -1,7 +1,9 @@
 <div class= "card">
     <img [src]="product?.img" height="250px;" width="250px"><br>
     <h3>{{product?.nome}}</h3>
-    <p>Preço: {{product?.preco}}</p>
-    <label for= "quantidade">Quantidade: <input id= "quantidade" type="number" min="0" required > </label><br>
-    <button> Adicionar ao carrinho</button>
-</div>
+    <p>{{product?.preco | currency: 'BRL'}}</p>
+    <label for= "quantidade">Quantidade: <input id= "quantidade" type="number" min="1" required > </label><br>
+    <div class="action add to cart" (click)="addToCart()">
+        <button> Comprar</button>
+    </div>
+</div>      

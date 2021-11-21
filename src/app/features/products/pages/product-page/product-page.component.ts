@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductPageComponent implements OnInit {
 
+  availableDateProducts: Date = new Date ('2021-12-31');
+
   constructor() { }
 
   ngOnInit(): void {
